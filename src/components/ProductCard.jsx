@@ -1,24 +1,43 @@
-import { Link } from 'react-router-dom'
-
 const formatPrice = (price) => {
-    return new Intl.NumberFormat("en-NG", {
-        style: "currency",
-        currency: "NGN",
-        maximumFractionDigits: 0,
-    }).format(price);
+  return new Intl.NumberFormat("en-NG", {
+    style: "currency",
+    currency: "NGN",
+    maximumFractionDigits: 0,
+  }).format(price);
 };
 
-function ProductCard({ name, price, image, id }) {
+function ProductCard({ product, onViewDetails }) {
   return (
-    <div className="relative flex flex-col justify-center items-center overflow-hidden border shadow border-slate-200 p-5">
-      <img src={image} alt={name} className='w-60 h-60 object-cover hover:scale-105 transition rounded-2xl'/>
-      <div className="flex gap-2 mt-4">
-        <h3 className='font-semibold'>{name}</h3>
-        <p className="absolute right-0 bottom-79 bg-red-700 text-white rounded-l-full px-2">{formatPrice(price)}</p>
+    <div className="flex flex-col items-center justify-center">
+        <button
+      onClick={() => onViewDetails(product)}
+      className="group relative flex flex-col items-center justify-center overflow-hidden border border-slate-200 bg-white p-5 shadow-sm transition  hover:shadow-lg"
+    >
+      <img
+        src={product.image}
+        alt={product.name}
+        loading="lazy"
+        className="h-60 w-60 rounded-2xl object-cover transition duration-300 group-hover:scale-105"
+      />
+
+      <div className="mt-4 flex flex-row-reverse w-full justify-between items-center">
+        <p className="px-3 py-1 text-sm font-bold text-slate-500 mt-1">
+        {formatPrice(product.price)}
+      </p>
+        <h3 className="font-semibold text-slate-800 text-center">
+          {product.name}
+        </h3>
       </div>
-      <Link to={`/product/${id}`} className="rounded-lg bg-blue-600 px-4 py-2 text-sm mt-4 font-semibold text-white shadow-sm transition hover:bg-blue-700 hover:scale-105">View →</Link>
+
+      
+
+      <span className="absolute left-0 top-5 rounded-r-full bg-blue-600 px-3 py-1 text-sm text-white">
+        ⭐ {product.rating}
+      </span>
+    </button>
     </div>
-  )
+    
+  );
 }
 
-export default ProductCard
+export default ProductCard;

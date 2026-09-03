@@ -1,4 +1,5 @@
 import { createContext, useContext, useState } from "react";
+import { toast } from "react-toastify";
 
 const CartContext = createContext(null)
 
@@ -6,7 +7,9 @@ export function CartProvider({ children }) {
     const [cartItems, setCartItems] = useState([])
 
     function addToCart(product) {
+        toast.success(`${product.name} added to cart!`)
         setCartItems((prev) => {
+
 
             const existing = prev.find((item) => item.id === product.id)
 
@@ -27,6 +30,26 @@ export function CartProvider({ children }) {
         setCartItems((prev) => prev.filter((item) => item.id !== productId))
     }
 
+    function increaseQuantity(productId) {
+        setCartItems((prev) => {
+            return prev.map((item) =>
+                item.id === productId
+                ? { ...item, quantity: item.quantity + 1 }
+                : item
+            )
+        })
+    }
+
+    function decreaseQuantity(productId) {
+        setCartItems((prev) => {
+            return prev.map((item) => 
+                item.id === productId
+                ? { ...item, quantity: Math.max(0, item.quantity - 1) }
+                : item
+            )
+        })
+    }
+
     const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0)
 
     const cartTotal = cartItems.reduce(
@@ -35,7 +58,7 @@ export function CartProvider({ children }) {
   )
 
   return (
-    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, cartCount, cartTotal }}>
+    <CartContext.Provider value={{ cartItems, addToCart, removeFromCart, increaseQuantity, decreaseQuantity, cartCount, cartTotal }}>
       {children}
     </CartContext.Provider>
   )

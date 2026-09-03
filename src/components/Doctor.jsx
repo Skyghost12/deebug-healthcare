@@ -1,13 +1,22 @@
 function DoctorCard({ doctor }) {
 
     return (
-        <div className="bg-white rounded-lg shadow-md p-6 m-4">
+        <div className="relative bg-white rounded-lg shadow-md p-6 m-4">
             <img src={doctor.image} alt={doctor.name} className="w-full h-80 object-cover rounded-lg hover:translate-0.5 hover:scale-105 transition" />
-            <h3 className="font-bold text-lg mt-4">{doctor.name}</h3>
-            <p className="text-gray-600">{doctor.specialization}</p>
-            <p className="text-gray-600">Experience: {doctor.experience}</p>
-            <p className="text-gray-600">Rating: {doctor.rating}</p>
-            <p className="text-gray-600">Available: {doctor.available ? "Yes" : "No"}</p>
+            <div className="flex justify-between items-center mt-4">
+                <h3 className="font-bold text-lg">{doctor.name}</h3>
+                <p className="text-gray-600"> {doctor.available ?
+                    <button className="bg-blue-500 text-white py-1.5 px-4 rounded hover:bg-blue-600">Contact</button> :
+                    <span className="text-red-500">Not Available</span>
+                }</p>
+            </div>
+            <div className="flex justify-between items-center mt-4">
+                <p className="text-gray-600">{doctor.specialization}</p>
+                <p className="text-gray-600">Experience: {doctor.experience}</p>
+            </div>
+            <span className="absolute left-0 top-5 rounded-r-full bg-blue-600 px-3 py-1 text-sm text-white">
+                ⭐ {doctor.rating}
+            </span>
         </div>
     )
 }
