@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.19.16",
+    "@paystack/inline-js": "^2.24.0",
     "@tailwindcss/vite": "^4.3.3",
+    "country-state-city": "^3.2.1",
     "lottie-react": "^3.1.1",
     "lucide-react": "^1.37.0",
     "react": "^19.2.8",
+    "react-country-state-city": "^1.1.13",
     "react-dom": "^19.2.8",
     "react-router-dom": "^7.18.3",
     "react-toastify": "^11.1.0",

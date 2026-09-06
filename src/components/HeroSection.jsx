@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom"
-import doctor from "../assets/doctors.avif"
+import hero from "../assets/mr-p.jpg"
 function HeroSection() {
 
 
     return(
          <section className="overflow-hidden relative">
-            <img src={doctor} alt="" className="h-200 w-full object-cover " />
+            <img src={hero} alt="" className="h-200 w-screen object-cover " />
              <div className="absolute inset-0 bg-black/65 "></div>
                 <div className="absolute top-10 inset-0 mx-auto grid max-w-7xl items-center gap-12 px-6 py-16 lg:grid-cols-2 lg:px-8 lg:py-24">
                     <div>

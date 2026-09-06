@@ -1,7 +1,9 @@
-function DoctorCard({ doctor }) {
+function DoctorCard({ doctor, onViewDetails }) {
 
     return (
-        <div className="relative bg-white rounded-lg shadow-md p-6 m-4">
+        <button
+        onClick={() => onViewDetails(doctor)}
+        className="relative bg-white rounded-lg shadow-md p-6 m-4">
             <img src={doctor.image} alt={doctor.name} className="w-full h-80 object-cover rounded-lg hover:translate-0.5 hover:scale-105 transition" />
             <div className="flex justify-between items-center mt-4">
                 <h3 className="font-bold text-lg">{doctor.name}</h3>
@@ -17,7 +19,7 @@ function DoctorCard({ doctor }) {
             <span className="absolute left-0 top-5 rounded-r-full bg-blue-600 px-3 py-1 text-sm text-white">
                 ⭐ {doctor.rating}
             </span>
-        </div>
+        </button>
     )
 }
 export default DoctorCard

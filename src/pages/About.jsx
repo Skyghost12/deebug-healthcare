@@ -1,4 +1,4 @@
-import { Code2, Server, Palette, GraduationCap, HeartPulse,  Mail, ArrowUpRight} from "lucide-react";
+import { Code2, Server, Palette, GraduationCap, HeartPulse, Mail, ArrowUpRight } from "lucide-react";
 import Footer from "../components/Footer";
 import doom from "../assets/doom.webp";
 
@@ -6,8 +6,11 @@ function About() {
     return (
         <>
             <main className="min-h-screen bg-slate-50 text-slate-900">
-                <section className="relative overflow-hidden bg-linear-to-br from-blue-600 via-blue-700 to-indigo-800 text-white">
-                    <div className="relative mx-auto max-w-5xl px-6 py-20 text-center">
+                <section className="relative overflow-hidden text-white flex justify-center ">
+                    <img src={doom} alt="" className="h-180 w-full object-cover" />
+                    <div className="absolute inset-0 bg-black/80 "></div>
+
+                    <div className="absolute top-30 mx-auto max-w-5xl px-6 py-20 text-center">
                         <div className="mx-auto mb-6 h-32 w-32 overflow-hidden rounded-full border-4 border-white/30 bg-white/10 shadow-2xl">
                             <img
                                 src={doom}
@@ -24,7 +27,7 @@ function About() {
                         </h1>
 
                         <p className="mx-auto mt-5 max-w-2xl text-base leading-7 text-blue-100 sm:text-lg">
-                            A Full-Stack Developer student at Deebug Institute 
+                            A Full-Stack Developer student at Deebug Institute
                             passionate about creating modern, practical, and user-friendly
                             digital experiences.
                         </p>
@@ -35,7 +38,7 @@ function About() {
                                 className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-semibold text-blue-700 shadow-lg transition hover:-translate-y-0.5 hover:bg-blue-50"
                             >
                                 About This Project
-                                <ArrowUpRight className="w-4 h-4"/>
+                                <ArrowUpRight className="w-4 h-4" />
                             </a>
 
                             <a
@@ -229,7 +232,7 @@ function About() {
 
                 {/* Social */}
                 <section className="px-6 pb-20 text-center">
-        
+
                 </section>
 
             </main>

@@ -1,7 +1,10 @@
 import { blogPosts } from "../data/products";
 import BlogPostCard from "../components/BlogPostCard";
+import { useState } from "react";
+import BlogPostDetails from "../components/BlogPostDetails";
 
 function BlogPost() {
+    const [selectedPost, setSelectedPost] = useState(null);
 
     return (
         <div className="bg-white py-24 sm:py-32 lg:py-40">
@@ -19,9 +22,13 @@ function BlogPost() {
                     <BlogPostCard 
                     key={post.id}
                     post={post}
+                    onViewDetails={setSelectedPost}
                     />
                    ))}
                 </div>
+                    {selectedPost && (
+                        BlogPostDetails({ post: selectedPost, onClose: () => setSelectedPost(null)})
+                    )}
             </div>
         </div>
     )

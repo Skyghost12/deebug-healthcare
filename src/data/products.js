@@ -11,6 +11,13 @@ import sugerMonitor from "../assets/sugar-m.webp";
 import thermometer from "../assets/thermometer.webp";
 import paracetamol from "../assets/paracetamol.webp";
 
+import collins from "../assets/collins.webp"
+import arthur from "../assets/arthur.webp"
+import ezekiel from "../assets/ezekiel.webp"
+import mrP from "../assets/mr-p.jpg"
+
+
+
 
 export const products = [
   {
@@ -669,39 +676,43 @@ export const products = [
 export const doctors = [
   {
     id: 1,
-    name: "Dr. Sarah Johnson",
-    specialization: "Cardiologist",
+    name: "Dr. Collins",
+    specialization: "Backend Cardiologist",
     experience: "8 years",
     rating: 4.9,
     available: true,
-    image: "https://images.unsplash.com/photo-1659989693409-5adc97274bed?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    Contact: "doctor@gmail.com",
+    image: collins,
   },
   {
     id: 2,
-    name: "Dr. Michael Anderson",
-    specialization: "Dermatologist",
+    name: "Dr. Arthur",
+    specialization: "Fullstack Dermatologist",
     experience: "6 years",
     rating: 4.8,
+    Contact: "doctor@gmail.com",
     available: true,
-    image: "https://images.unsplash.com/photo-1712215544003-af10130f8eb3?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: arthur,
   },
   {
     id: 3,
-    name: "Dr. Emily Williams",
+    name: "Dr. Ezekiel",
     specialization: "Pediatrician",
     experience: "10 years",
     rating: 4.9,
+    Contact: "doctor@gmail.com",
     available: false,
-    image: "https://plus.unsplash.com/premium_photo-1674841252366-162fc9b8f983?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: ezekiel,
   },
   {
     id: 4,
-    name: "Dr. David Brown",
+    name: "Dr. Mr p",
     specialization: "Neurologist",
     experience: "12 years",
     rating: 4.7,
+    Contact: "doctor@gmail.com",
     available: true,
-    image: "https://plus.unsplash.com/premium_photo-1723514536306-26fe5c4adeb7?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: mrP,
   },
   {
     id: 5,
@@ -709,6 +720,7 @@ export const doctors = [
     specialization: "Gynecologist",
     experience: "9 years",
     rating: 4.8,
+    Contact: "doctor@gmail.com",
     available: true,
     image: "https://plus.unsplash.com/premium_photo-1661766718556-13c2efac1388?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
@@ -718,6 +730,7 @@ export const doctors = [
     specialization: "General Practitioner",
     experience: "7 years",
     rating: 4.6,
+    Contact: "doctor@gmail.com",
     available: false,
     image: "https://plus.unsplash.com/premium_photo-1661492071612-98d26885614a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },

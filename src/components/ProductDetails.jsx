@@ -64,7 +64,9 @@ function ProductDetails({ product, onClose }) {
                     <button
                         className="mt-5 w-fit rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700 hover:scale-105"
                         onClick={() => {
-                            addToCart(product);
+                            addToCart(product)
+                            onClose()
+                            
                         }}
                     >
                         Add to Cart

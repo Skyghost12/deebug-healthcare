@@ -8,16 +8,17 @@ function Navbar() {
   const { cartCount } = useCart();
   const [isOpen, setIsOpen] = useState(false);
 
-  const{ theme, toggleTheme} = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
 
   const closeMenu = () => setIsOpen(false);
 
   const navLinkClass = ({ isActive }) =>
-    `text-sm font-medium transition ${isActive
-      ? "text-blue-600"
-      : "text-slate-600 hover:text-blue-600"
+    `text-sm font-medium transition relative pb-1 after:absolute after:bottom-0 after:left-0 after:right-0 after:h-0.5 after:bg-blue-600 ${isActive
+      ? 'text-blue-600 after:scale-x-100'
+      : 'text-slate-600 hover:text-blue-600 after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition-transform'
     }`;
+
 
   return (
     <nav className="fixed top-0 left-0 z-50 w-full border-b border-slate-100 bg-white shadow-md">
@@ -48,7 +49,7 @@ function Navbar() {
           <NavLink to="/product" className={navLinkClass}>
             Products
           </NavLink>
-            <NavLink to="/health-tips" className={navLinkClass}>
+          <NavLink to="/health-tips" className={navLinkClass}>
             Health TIps
           </NavLink>
 
@@ -61,7 +62,7 @@ function Navbar() {
         <div className="hidden items-center gap-5 md:flex">
 
           {/* --------------------- Cart================== */}
-          <Link to="/cart" className="relative">
+          <Link to="/cart" className="relative animate-bounce">
             <ShoppingCart />
 
             {cartCount > 0 && (
