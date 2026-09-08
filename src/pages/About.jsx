@@ -1,19 +1,19 @@
 import { Code2, Server, Palette, GraduationCap, HeartPulse, Mail, ArrowUpRight } from "lucide-react";
 import Footer from "../components/Footer";
-import doom from "../assets/doom.webp";
+import sky from "../assets/sky.png";
 
 function About() {
     return (
         <>
             <main className="min-h-screen bg-slate-50 text-slate-900">
                 <section className="relative overflow-hidden text-white flex justify-center ">
-                    <img src={doom} alt="" className="h-180 w-full object-cover" />
+                    <img src={sky} alt="" className="h-180 w-full object-cover" />
                     <div className="absolute inset-0 bg-black/80 "></div>
 
                     <div className="absolute top-30 mx-auto max-w-5xl px-6 py-20 text-center">
                         <div className="mx-auto mb-6 h-32 w-32 overflow-hidden rounded-full border-4 border-white/30 bg-white/10 shadow-2xl">
                             <img
-                                src={doom}
+                                src={sky}
                                 alt="Sky"
                                 className="h-full w-full object-cover"
                             />
