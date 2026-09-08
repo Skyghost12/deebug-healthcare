@@ -1,5 +1,6 @@
 import { createContext, useContext, useState } from "react";
 import { toast } from "react-toastify";
+import { useSound } from "../hook/useSound";
 
 const CartContext = createContext(null)
 

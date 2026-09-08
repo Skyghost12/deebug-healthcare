@@ -12,6 +12,7 @@ const formatPrice = (price) => {
 function ProductDetails({ product, onClose }) {
 
     const { addToCart } = useCart();
+     
 
 
     if (!product) return null;

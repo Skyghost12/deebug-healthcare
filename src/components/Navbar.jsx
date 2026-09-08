@@ -28,7 +28,7 @@ function Navbar() {
           className="flex items-center gap-2"
           onClick={closeMenu}
         >
-          <span className="text-xl font-bold tracking-tight animate-bounce">
+          <span className="text-xl font-bold tracking-tight">
             Deebug<span className="text-blue-600">Healthcare</span>
           </span>
         </Link>
