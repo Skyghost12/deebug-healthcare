@@ -16,6 +16,7 @@ import arthur from "../assets/arthur.webp"
 import ezekiel from "../assets/ezekiel.webp"
 import mrP from "../assets/mr-p.jpg"
 import faithfulness from "../assets/faithfulness.jpeg"
+import john from "../assets/john.jpeg"
 
 
 
@@ -727,13 +728,13 @@ export const doctors = [
   },
   {
     id: 6,
-    name: "Dr. Daniel Wilson",
+    name: "Dr. John",
     specialization: "General Practitioner",
     experience: "7 years",
     rating: 4.6,
     Contact: "doctor@gmail.com",
     available: false,
-    image: "https://plus.unsplash.com/premium_photo-1661492071612-98d26885614a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: john,
   },
 ];
 
