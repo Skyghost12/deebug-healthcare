@@ -8,7 +8,7 @@ function DoctorCard({ doctor, onViewDetails }) {
             <div className="flex justify-between items-center mt-4">
                 <h3 className="font-bold text-lg">{doctor.name}</h3>
                 <p className="text-gray-600"> {doctor.available ?
-                    <button className="bg-blue-500 text-white py-1.5 px-4 rounded hover:bg-blue-600">Contact</button> :
+                    <a className="bg-blue-500 text-white py-1.5 px-4 rounded hover:bg-blue-600">Contact</a> :
                     <span className="text-red-500">Not Available</span>
                 }</p>
             </div>

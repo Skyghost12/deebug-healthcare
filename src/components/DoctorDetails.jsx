@@ -1,3 +1,4 @@
+import { toast } from "react-toastify";
 import { doctors } from "../data/products";
 
 function DoctorDetails({ doctor, onClose}) {
@@ -45,13 +46,11 @@ function DoctorDetails({ doctor, onClose}) {
                     <button
                         className="mt-5 w-fit rounded-lg  px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:scale-105"
                         onClick={() => {
-                            addToCart(doctor)
-                            onClose()
-                            
+                            toast.success("appointment booked")
                         }}
                     >
                          <p className="text-gray-600"> {doctor.available ?
-                    <button className="bg-blue-500 text-white py-1.5 px-4 rounded hover:bg-blue-600">Message</button> :
+                    <a className="bg-blue-500 text-white py-1.5 px-4 rounded hover:bg-blue-600">Message</a> :
                     <span className="text-red-500 cursor-not-allowed">Not Available</span>
                 }</p>
                     </button>
