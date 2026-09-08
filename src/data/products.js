@@ -15,6 +15,7 @@ import collins from "../assets/collins.webp"
 import arthur from "../assets/arthur.webp"
 import ezekiel from "../assets/ezekiel.webp"
 import mrP from "../assets/mr-p.jpg"
+import faithfulness from "../assets/faithfulness.jpeg"
 
 
 
@@ -716,13 +717,13 @@ export const doctors = [
   },
   {
     id: 5,
-    name: "Dr. Jessica Miller",
+    name: "Dr. Faithfulness",
     specialization: "Gynecologist",
-    experience: "9 years",
+    experience: "40 years",
     rating: 4.8,
     Contact: "doctor@gmail.com",
     available: true,
-    image: "https://plus.unsplash.com/premium_photo-1661766718556-13c2efac1388?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    image: faithfulness,
   },
   {
     id: 6,
