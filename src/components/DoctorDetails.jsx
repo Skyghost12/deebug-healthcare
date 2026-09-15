@@ -43,17 +43,17 @@ function DoctorDetails({ doctor, onClose}) {
                         Email: {doctor.Contact}
                     </p>
 
-                    <button
-                        className="mt-5 w-fit rounded-lg  px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:scale-105"
-                        onClick={() => {
-                            toast.success("appointment booked")
-                        }}
+                    <span
+                        className="mt-5 w-fit rounded-lg  px-5 py-2.5 text-sm font-semibold "
+                        
                     >
                          <p className="text-gray-600"> {doctor.available ?
-                    <a className="bg-blue-500 text-white py-1.5 px-4 rounded hover:bg-blue-600">Message</a> :
+                    <button onClick={() => {
+                            toast.success("appointment booked")
+                        }} className="bg-blue-500 text-white py-1.5 px-4 rounded shadow-sm transition hover:scale-105 hover:bg-blue-600">Message</button> :
                     <span className="text-red-500 cursor-not-allowed">Not Available</span>
                 }</p>
-                    </button>
+                    </span>
 
                 </div>
             </section>

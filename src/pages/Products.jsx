@@ -49,7 +49,7 @@ function Product() {
   return (
     <main className="min-h-screen bg-slate-50 mt-8">
       <section className="bg-white">
-        <div className="mx-auto max-w-7xl px-2 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-2 py-16 sm:px-6 lg:px-3">
           <div className="max-w-3xl">
             <span className="mb-4 inline-block rounded-full bg-blue-50 px-4 py-2 text-sm font-medium text-blue-600">
               Healthcare Store
