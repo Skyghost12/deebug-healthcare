@@ -62,7 +62,7 @@ function Navbar() {
         <div className="hidden items-center gap-5 md:flex">
 
           {/* --------------------- Cart================== */}
-          <Link to="/cart" className="relative animate-bounce">
+          <Link to="/cart" className="relative">
             <ShoppingCart />
 
             {cartCount > 0 && (
@@ -130,6 +130,10 @@ function Navbar() {
             >
               Find a Doctor
             </a>
+
+            <NavLink to="/health-tips" className={navLinkClass}>
+            Health TIps
+          </NavLink>
 
             <NavLink
               to="/product"

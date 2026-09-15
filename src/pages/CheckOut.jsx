@@ -109,7 +109,7 @@ function CheckOut() {
             !formData.email.trim() ||
             !formData.address.trim() ||
             !formData.phoneNumber.trim() ||
-            !formData.city.trim() ||
+            // !formData.city.trim() ||
             !formData.state.trim()
         ) {
             toast.error("Please complete all checkout fields.");
