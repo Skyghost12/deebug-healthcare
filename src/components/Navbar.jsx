@@ -77,7 +77,7 @@ function Navbar() {
           </button> */}
 
           <button
-            className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700"
+            className="rounded-lg bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-blue-700 animate-bounce"
           >
             Chat with a Doctor
           </button>
