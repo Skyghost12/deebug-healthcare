@@ -17,7 +17,7 @@ function ProductCard({ product, onViewDetails }) {
         src={product.image}
         alt={product.name}
         loading="lazy"
-        className="h-60 w-60 rounded-2xl object-cover transition duration-300 group-hover:scale-105"
+        className="h-60 w-60 object-cover transition duration-300 group-hover:scale-105"
       />
 
       <div className="mt-4 flex flex-row-reverse w-full justify-between items-center">

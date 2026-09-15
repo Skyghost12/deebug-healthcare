@@ -4,7 +4,7 @@ function DoctorCard({ doctor, onViewDetails }) {
         <button
         onClick={() => onViewDetails(doctor)}
         className="relative bg-white rounded-lg shadow-md p-6 m-4">
-            <img src={doctor.image} alt={doctor.name} className="w-full h-80 object-cover rounded-lg hover:translate-0.5 hover:scale-105 transition" />
+            <img src={doctor.image} alt={doctor.name} className="w-full h-80 object-cover hover:translate-0.5 hover:scale-105 transition" />
             <div className="flex justify-between items-center mt-4">
                 <h3 className="font-bold text-lg">{doctor.name}</h3>
                 <p className="text-gray-600"> {doctor.available ?
