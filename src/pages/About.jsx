@@ -1,6 +1,6 @@
 import { Code2, Server, Palette, GraduationCap, HeartPulse, Mail, ArrowUpRight } from "lucide-react";
 import Footer from "../components/Footer";
-import sky from "../assets/sky.png";
+import sky from "../assets/sky.webp";
 
 function About() {
     return (

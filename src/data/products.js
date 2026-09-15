@@ -1,5 +1,5 @@
 import vitamin from "../assets/vitamin-c.webp";
-import bloodPressure from "../assets/blood-presure-m.png";
+import bloodPressure from "../assets/blood-presure-m.webp";
 import Antiseptic from "../assets/asthentic.webp";
 import elastic from "../assets/elastic-medical-bondage.webp";
 import firstAidKit from "../assets/first-aid-kit.webp";
@@ -11,12 +11,12 @@ import sugerMonitor from "../assets/sugar-m.webp";
 import thermometer from "../assets/thermometer.webp";
 import paracetamol from "../assets/paracetamol.webp";
 
-import collins from "../assets/collins.png"
-import arthur from "../assets/arthur.png"
-import ezekiel from "../assets/ezekiel.png"
-import mrP from "../assets/mr-p.png"
-import faithfulness from "../assets/faithfulness.png"
-import john from "../assets/john.png"
+import collins from "../assets/collins.webp"
+import arthur from "../assets/arthur.webp"
+import ezekiel from "../assets/ezekiel.webp"
+import mrP from "../assets/mr-p.webp"
+import faithfulness from "../assets/faithfulness.webp"
+import john from "../assets/john.webp"
 
 
 

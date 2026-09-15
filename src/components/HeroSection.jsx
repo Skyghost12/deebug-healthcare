@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import hero from "../assets/mr-p.png"
+import hero from "../assets/mr-p.webp"
 function HeroSection() {
 
 
