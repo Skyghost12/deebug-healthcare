@@ -28,7 +28,7 @@ function Navbar() {
           className="flex items-center gap-2"
           onClick={closeMenu}
         >
-          <span className="text-xl font-bold tracking-tight">
+          <span className="text-xl font-bold tracking-tight mr-4">
             Deebug<span className="text-blue-600">Healthcare</span>
           </span>
         </Link>

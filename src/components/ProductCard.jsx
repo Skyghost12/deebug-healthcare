@@ -24,7 +24,7 @@ function ProductCard({ product, onViewDetails }) {
         <p className="px-3 py-1 text-sm font-bold text-slate-500 mt-1">
         {formatPrice(product.price)}
       </p>
-        <h3 className="font-semibold text-slate-800 text-center">
+        <h3 className="font-semibold text-slate-800 text-left">
           {product.name}
         </h3>
       </div>

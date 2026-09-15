@@ -19,7 +19,7 @@ function HeroSection() {
                             <span className="text-blue-600"> made simple.</span>
                         </h1>
 
-                        <p className="mt-6 max-w-lg text-lg leading-8 text-white font-[Newsreader] italic">
+                        <p className="mt-6 max-w-lg text-lg leading-8 text-white  italic">
                             Connect with trusted healthcare professionals, book
                             appointments, and find quality healthcare products all in
                             one place.

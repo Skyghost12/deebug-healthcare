@@ -73,8 +73,8 @@ function Product() {
           <div className="flex flex-col gap-4 items-center">
             <h1 className="text-2xl font-bold">Available Products</h1>
             <div className="relative">
-              <input type="search" placeholder="Search products..." value={search} onChange={(e) => setSearch(e.target.value)} className="px-10 border border-slate-200 outline-0 rounded-2xl py-3 w-full bg-slate-50" />
-              <Search className="w-5 h-5 absolute top-3 left-3" />
+              <input type="search" placeholder="Search products..." value={search} onChange={(e) => setSearch(e.target.value)} className="px-10 border border-slate-200 outline-0 rounded-full text-left py-3 w-full bg-slate-50 md:px-60 " />
+              <Search className="w-5 h-5 absolute top-4 left-3 " />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10  ">
