@@ -69,7 +69,7 @@ function Product() {
       </section>
 
       <section className="bg-white flex justify-between items-center flex-col gap-4">
-        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-3">
           <div className="flex flex-col gap-4 items-center">
             <h1 className="text-2xl font-bold">Available Products</h1>
             <div className="relative">
