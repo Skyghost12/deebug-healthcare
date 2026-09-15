@@ -44,7 +44,7 @@ function Cart() {
                                     <p className="">Total: {formatPrice(cartTotal.toFixed(2))}</p>
                                 </div>
                                 <div className=" flex flex-col gap-2 items-center">
-                                    <div className="relative flex gap-5 items-center justify-between mt-10 border border-slate-300  bg-slate-200  rounded-lg">
+                                    <div className="relative flex flex-row-reverse  gap-5 items-center justify-between mt-10 border border-slate-300  bg-slate-200  rounded-lg">
                                         <button className="text-green-700 font-semibold text-2xl px-2 hover:bg-blue-400 hover:text-white transition" onClick={() => increaseQuantity(item.id)}>
                                             +
                                         </button>
